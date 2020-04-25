@@ -16,10 +16,13 @@
 
 아래 순서대로 공부하세요.
 
-1. www.github.com 사용법을 배웁니다. 참고: [깃허브 공부 자료](https://sunnykwak.tistory.com/97?fbclid=IwAR09R6DMdhXdjVfNWv8bdCWYTmnYOaMCIZTtlOD34aTfw2yuUxQM-TQERWc)
+1. www.github.com 사용법을 배웁니다.
+   1. 참고: [깃허브 공부 자료](https://sunnykwak.tistory.com/97?fbclid=IwAR09R6DMdhXdjVfNWv8bdCWYTmnYOaMCIZTtlOD34aTfw2yuUxQM-TQERWc)
 2. Flutter 기초를 배웁니다.
-   1. [코딩셰프의 Flutter 동영상 강좌](https://www.youtube.com/channel/UC_2ge45JCuJH1z6VYt4iCgQ)
-   2. [더코딩파파의 FLutter 동영상 강좌](https://www.youtube.com/channel/UCUH2DSbsNUz2sW3kBNn4ibw)
+   1. [오준석의 생존코딩 - 입문편](https://www.youtube.com/watch?v=lRbZsBvG9Ig&list=PLxTmPHxRH3VUueVvEnrP8qxHAP5x9XAPv)
+   2. [오준석의 생존코딩 - 중급편](https://www.youtube.com/watch?v=ei8TX-uqP6E&list=PLxTmPHxRH3VWLY-eyQuV1C_IbIQlCXEhe)
+   3. [코딩셰프의 Flutter 동영상 강좌](https://www.youtube.com/channel/UC_2ge45JCuJH1z6VYt4iCgQ)
+   4. [더코딩파파의 FLutter 동영상 강좌](https://www.youtube.com/channel/UCUH2DSbsNUz2sW3kBNn4ibw)
 
 ### Flutter 기본 자료
 
