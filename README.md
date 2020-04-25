@@ -12,6 +12,17 @@
 
 ## 레퍼런스
 
+### 왕초보를 위한 팁
+
+아래 순서대로 공부하세요.
+
+1. www.github.com 사용법을 배웁니다. 참고: [깃허브 공부 자료](https://sunnykwak.tistory.com/97?fbclid=IwAR09R6DMdhXdjVfNWv8bdCWYTmnYOaMCIZTtlOD34aTfw2yuUxQM-TQERWc)
+2. Flutter 기초를 배웁니다.
+   1. [코딩셰프의 Flutter 동영상 강좌](https://www.youtube.com/channel/UC_2ge45JCuJH1z6VYt4iCgQ)
+   2. [더코딩파파의 FLutter 동영상 강좌](https://www.youtube.com/channel/UCUH2DSbsNUz2sW3kBNn4ibw)
+
+### Flutter 기본 자료
+
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
