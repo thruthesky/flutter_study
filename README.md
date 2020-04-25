@@ -23,6 +23,23 @@
 2. 개발은 반드시 자신의 'branch' 에서 해 주세요. 'master' 는 가능한 건드리지 마세요.
 3. 프로젝트 관리자로 부터 역활을 분담 받으시고 작업을 진행해주세요.
 
+## 백엔드
+
+### 잉글리시 펀 단어장
+
+
+#### 버전 확인
+
+https://api.english-fun.com/wordpress-api-v2/php/api.php?method=app.version
+
+#### 단어장 가져오기
+
+* 단어장 Api: https://api.english-fun.com/wordpress-api-v2/php/api.php?method=englishfun.download_book_v2
+* 단어장 전체 사이즈: https://api.english-fun.com/wordpress-api-v2/php/api.php?method=englishfun.book_length_v2
+
+단어장이 업데이트 되면 전체 사이즈가 변경된다. 따라서 기존 사이즈를 보관해 놓고, 업데이트가 있는지 없는지 확인하면 된다.
+
+
 ## 레퍼런스
 
 ### 왕초보를 위한 팁
