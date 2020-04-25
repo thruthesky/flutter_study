@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_study/models/app.model.dart';
 import 'package:flutter_study/services/temp-data.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  AppModel.downloadBook();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -36,22 +40,21 @@ class _WordBookState extends State<WordBook> {
           String word = tempWords.keys.elementAt(index);
           Map<String, dynamic> data = tempWords[word];
           return ListTile(
-            title: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                Text(word),
-                SizedBox(width: 12),
-                if (data['star'] != null)
-                  for (int i = 0; i < data['star']; i++)
-                    Icon(
-                      Icons.star,
-                      size: 14,
-                    ),
-              ],
-            ),
-            subtitle: Text(data['meaning'].join(', ')),
-            trailing: Icon(Icons.keyboard_arrow_right)
-          );
+              title: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Text(word),
+                  SizedBox(width: 12),
+                  if (data['star'] != null)
+                    for (int i = 0; i < data['star']; i++)
+                      Icon(
+                        Icons.star,
+                        size: 14,
+                      ),
+                ],
+              ),
+              subtitle: Text(data['meaning'].join(', ')),
+              trailing: Icon(Icons.keyboard_arrow_right));
         },
       ),
     );
