@@ -12,10 +12,10 @@ class AppModel extends ChangeNotifier {
         'https://api.english-fun.com/wordpress-api-v2/res/englishfun/tmp/words.json';
     try {
       Response response = await Dio().get(url);
-      var words = response.data['data']['words'];
+      var words = response.data;
       for(var i in words.keys ) {
-        var word = words[i];
-        print(word);
+        var meanings = words[i];
+        print("$i, $meanings");
       }
     } catch (e) {
       print(e);
