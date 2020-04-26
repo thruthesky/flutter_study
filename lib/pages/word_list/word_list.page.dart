@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_study/models/app.model.dart';
 import 'package:provider/provider.dart';
 
-class Home extends StatefulWidget {
-  Home({Key key}) : super(key: key);
+class WordList extends StatefulWidget {
+  WordList({Key key}) : super(key: key);
 
   @override
-  _HomeState createState() => _HomeState();
+  _WordListState createState() => _WordListState();
 }
 
-class _HomeState extends State<Home> {
+class _WordListState extends State<WordList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

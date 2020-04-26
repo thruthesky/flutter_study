@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_study/globals.dart';
-import 'package:flutter_study/pages/home/home.page.dart';
+import 'package:flutter_study/services/app.router.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -8,7 +8,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
@@ -16,10 +15,11 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (context) => app),
       ],
       child: MaterialApp(
+        onGenerateRoute: AppRouter.generate,
+        initialRoute: AppRoutes.wordList,
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: Home(),
       ),
     );
   }
