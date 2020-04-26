@@ -24,8 +24,6 @@ class AppModel extends ChangeNotifier {
       await box.clear();
 
       for(var word in words.keys) {
-        print("$word");
-        print(words[word]);
         box.put(word.toLowerCase(), words[word]);
       }
 
