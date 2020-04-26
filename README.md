@@ -23,16 +23,24 @@
 2. 개발은 반드시 자신의 'branch' 에서 해 주세요. 'master' 는 가능한 건드리지 마세요.
 3. 프로젝트 관리자로 부터 역활을 분담 받으시고 작업을 진행해주세요.
 
+## 코딩 가이드라인
+
+### 순서도
+
+1. 앱이 처음 시작 될 때, 서버에서 데이터가 업데이트되었는지 확인
+   1. Dio 를 통해서 HTTP 호출을 함. (Dio 가 더 편하고, 기능이 좋아서)
+   2. Hive 에 단어 목록을 저장. (SQLite 로 하면 매우 느림. Hive 가 딱 맞음.)
+2. Hive 에서 단어를 리스트 뷰로 표시.
+   1. 기본적으로 모르는 단어에 모두 표시
+   2. 아는 단어로 이동 가능
+   3. 아는 단어/모르는 단어 테스트 후 자동 분류
+3. 단어 클릭시 단어 상세 페이지 표시
+
 ## 백엔드
 
-### 잉글리시 펀 단어장
+* 단어장 서버에서 RestfulApi 로 단어 목록을 가져옵니다.
 
-
-#### 버전 확인
-
-https://api.english-fun.com/wordpress-api-v2/php/api.php?method=app.version
-
-#### 단어장 가져오기
+### 단어장 가져오기
 
 * 단어장 Api: https://api.english-fun.com/wordpress-api-v2/res/englishfun/tmp/words.json
 * 단어장 전체 사이즈: https://api.english-fun.com/wordpress-api-v2/res/englishfun/tmp/words-length.php
