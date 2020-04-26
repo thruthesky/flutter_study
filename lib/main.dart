@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_study/models/app.model.dart';
-import 'package:flutter_study/services/temp-data.dart';
 
 void main() {
-  AppModel.downloadBook();
+  AppModel.init();
   runApp(MyApp());
 }
 
@@ -34,29 +33,7 @@ class _WordBookState extends State<WordBook> {
       appBar: AppBar(
         title: Text('단어장'),
       ),
-      body: ListView.builder(
-        itemCount: tempWords.keys.toList().length,
-        itemBuilder: (context, index) {
-          String word = tempWords.keys.elementAt(index);
-          Map<String, dynamic> data = tempWords[word];
-          return ListTile(
-              title: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  Text(word),
-                  SizedBox(width: 12),
-                  if (data['star'] != null)
-                    for (int i = 0; i < data['star']; i++)
-                      Icon(
-                        Icons.star,
-                        size: 14,
-                      ),
-                ],
-              ),
-              subtitle: Text(data['meaning'].join(', ')),
-              trailing: Icon(Icons.keyboard_arrow_right));
-        },
-      ),
+      body: Text('loading...'),
     );
   }
 }

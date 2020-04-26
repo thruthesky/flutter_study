@@ -34,8 +34,8 @@ https://api.english-fun.com/wordpress-api-v2/php/api.php?method=app.version
 
 #### 단어장 가져오기
 
-* 단어장 Api: https://api.english-fun.com/wordpress-api-v2/php/api.php?method=englishfun.download_book_v2
-* 단어장 전체 사이즈: https://api.english-fun.com/wordpress-api-v2/php/api.php?method=englishfun.book_length_v2
+* 단어장 Api: https://api.english-fun.com/wordpress-api-v2/res/englishfun/tmp/words.json
+* 단어장 전체 사이즈: https://api.english-fun.com/wordpress-api-v2/res/englishfun/tmp/words-length.php
 
 단어장이 업데이트 되면 전체 사이즈가 변경된다. 따라서 기존 사이즈를 보관해 놓고, 업데이트가 있는지 없는지 확인하면 된다.
 
