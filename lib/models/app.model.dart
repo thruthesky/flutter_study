@@ -1,5 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_study/globals.dart';
+import 'package:hive/hive.dart';
 
 class AppModel extends ChangeNotifier {
   AppModel() {
@@ -18,6 +20,15 @@ class AppModel extends ChangeNotifier {
     try {
       Response response = await Dio().get(url);
       words = response.data;
+      var box = Hive.box(wordBox);
+      await box.clear();
+
+      for(var word in words.keys) {
+        print("$word");
+        print(words[word]);
+        box.put(word.toLowerCase(), words[word]);
+      }
+
       notifyListeners();
     } catch (e) {
       print(e);

@@ -6,3 +6,5 @@ class AppRoutes {
   static String wordList = 'wordList';
   static String wordArrange = 'wordArrange';
 }
+
+const wordBox = 'wordBox';
