@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         onGenerateRoute: AppRouter.generate,
-        initialRoute: AppRoutes.wordList,
+        initialRoute: AppRoutes.wordArrange,
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
