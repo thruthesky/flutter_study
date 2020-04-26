@@ -18,7 +18,10 @@ class _WordListState extends State<WordList> {
       ),
       body: Selector<AppModel, Map<String, dynamic>>(
         builder: (context, words, child) {
-          if (words == null) return Center(child: Text('Loading...'));
+          if (words == null)
+            return Center(
+              child: Text('Loading...'),
+            );
           return ListView.builder(
             itemCount: words.keys.toList().length,
             itemBuilder: (context, index) {
